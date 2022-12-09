@@ -1,0 +1,31 @@
+.App {
+    --header_height: 60px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    max-width: 600px;
+    padding: 30px;
+}
+
+.hw {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.hwTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    height: 30px;
+    border-bottom: 1px solid gray;
+}
+
