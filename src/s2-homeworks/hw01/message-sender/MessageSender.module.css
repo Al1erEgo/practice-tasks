@@ -41,8 +41,8 @@
 }
 
 .button:hover {
-
+    background: #DDEEFF;
 }
 .button:active {
-
+    background: blue;
 }
