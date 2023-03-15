@@ -1,7 +1,24 @@
 .tech {
-
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .loading {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4D4D4D;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 480px;
+}
 
+.hw14 {
+    width: 100%;
+    max-width: 480px;
 }

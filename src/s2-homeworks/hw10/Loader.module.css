@@ -1,3 +1,41 @@
 .loader {
     /*свг и/или анимация*/
+    position:relative;
+    width: 91px;
+    height: 91px;
+
+    background: conic-gradient(from 90deg at 50% 50%, rgba(255, 255, 255, 0) 0deg, #512DE4 360deg);
+    border-radius: 50%;
+
+    animation: 1.5s linear infinite rotate;
+}
+
+@keyframes rotate{
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.loader::after{
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    top: 8px;
+    left: 8px;
+    border-radius: 50%;
+}
+.loader::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 83px;
+    width: 8px;
+    height: 8px;
+    background: #512DE4;
+    border-radius: 50%;
 }

@@ -2,6 +2,17 @@
 }
 
 .wrapper {
+    display: flex;
+    gap: 20px;
+    height: 40px;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat' , sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .number {

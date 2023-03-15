@@ -1,5 +1,19 @@
 .buttonsContainer {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 260px;
+    justify-content: space-between;
 }
 
 .editableSpanContainer {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 280px;
+}
+
+#hw6-save {
+    height: 30px;
+    width: 115px;
 }

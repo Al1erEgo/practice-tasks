@@ -7,10 +7,10 @@ import {useSearchParams} from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
 
 /*
-* 1 - дописать SuperPagination
-* 2 - дописать SuperSort
-* 3 - проверить pureChange тестами
-* 3 - дописать sendQuery, onChangePagination, onChangeSort в HW15
+* 1 - дописать SuperPagination +
+* 2 - дописать SuperSort +
+* 3 - проверить pureChange тестами +
+* 3 - дописать sendQuery, onChangePagination, onChangeSort в HW15 +
 * 4 - сделать стили в соответствии с дизайном
 * 5 - добавить HW15 в HW5/pages/JuniorPlus
 * */
@@ -46,9 +46,14 @@ const HW15 = () => {
         getTechs(params)
             .then((res) => {
                 // делает студент
-
+                console.log(res)
                 // сохранить пришедшие данные
 
+                if(res){
+                    setTotalCount(res.data.totalCount)
+                    setTechs(res.data.techs)
+                }
+                setLoading(false)
                 //
             })
     }
@@ -58,22 +63,25 @@ const HW15 = () => {
 
         // setPage(
         // setCount(
-
+        setPage(newPage)
+        setCount(newCount)
         // sendQuery(
         // setSearchParams(
-
+        sendQuery({page: newPage, count: newCount, sort})
+        setSearchParams({page: ''+newPage, count: ''+newCount, sort})
         //
     }
 
     const onChangeSort = (newSort: string) => {
         // делает студент
-
+        setSort(newSort)
+        setPage(1)
         // setSort(
         // setPage(1) // при сортировке сбрасывать на 1 страницу
-
+        sendQuery({page, count, sort: newSort})
         // sendQuery(
         // setSearchParams(
-
+        setSearchParams({page: ''+page, count: ''+count, sort: newSort})
         //
     }
 
