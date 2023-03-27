@@ -1,5 +1,5 @@
 .tech {
-    width: 50vw;
+    width: 50%;
 }
 
 .developer {
@@ -7,21 +7,52 @@
 }
 
 .techHeader {
-    width: 50vw;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .developerHeader {
-
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .row {
     display: flex;
+    padding: 7px;
+    max-width: 600px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-top: solid 1px #E5E5E5;
 }
 
 .rowHeader {
+    max-width: 600px;
     display: flex;
+    padding: 7px;
+    margin-top: 30px;
+    background: #E5E5E5;
 }
 
 .loading {
-
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 0.8;
 }
